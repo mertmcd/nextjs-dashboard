@@ -55,7 +55,6 @@ export async function authenticate(
 
 export async function createInvoice(prevState: State, formData: FormData) {
   // Validate form using Zod
-  debugger;
   const validatedFields = CreateInvoice.safeParse({
     customerId: formData.get("customerId"),
     amount: formData.get("amount"),
